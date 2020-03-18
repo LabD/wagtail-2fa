@@ -1,4 +1,4 @@
-Django>=1.11
-wagtail>=2.0
+Django>=2.2
+wagtail>=2.8
 django-debug-toolbar==2.2
 -e .[docs,test]

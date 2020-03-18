@@ -51,6 +51,7 @@
                         <label>{% trans 'QR Code' %}</label>
                         <div class="field-content">
                             <img src="{% url 'wagtail_2fa_device_qrcode' %}">
+                            <p class="help"><b>Secret: </b>{{ form.instance.key }}</p>
                         </div>
                     </div>
                 </li>
