@@ -3,7 +3,7 @@ from functools import partial
 import django_otp
 from django.conf import settings
 from django.contrib.auth.views import redirect_to_login
-from django.urls import NoReverseMatch, reverse
+from django.urls import reverse, resolve
 from django.utils.functional import SimpleLazyObject
 from django_otp.middleware import OTPMiddleware as _OTPMiddleware
 
@@ -69,29 +69,20 @@ class VerifyUserMiddleware(_OTPMiddleware):
         ):
             return False
 
-        # Don't require verification for specified paths
-        if request.path in self._get_paths(self._allowed_url_names):
+        # Don't require verification for specified URL names
+        request_url_name = resolve(request.path_info).url_name
+        if request_url_name in self._allowed_url_names:
             return False
 
         # If the user does not have a device, don't require verification
-        # for the specified paths
-        allowed_no_device_paths = self._get_paths(self._allowed_url_names_no_device)
-        if request.path in allowed_no_device_paths:
+        # for the specified URL names
+        if request_url_name in self._allowed_url_names_no_device:
             user_has_device = django_otp.user_has_device(user, confirmed=True)
             if not user_has_device:
                 return False
 
-        # For all other cases require that the user is verfied via otp
+        # For all other cases require that the user is verified via otp
         return True
-
-    def _get_paths(self, route_names):
-        results = []
-        for route_name in route_names:
-            try:
-                results.append(settings.WAGTAIL_MOUNT_PATH + reverse(route_name))
-            except NoReverseMatch:
-                pass
-        return results
 
 
 class VerifyUserPermissionsMiddleware(VerifyUserMiddleware):
