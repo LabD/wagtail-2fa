@@ -25,7 +25,7 @@ tests_require = [
     'isort==5.5.3',
     'flake8==3.8.3', # 3.7.9
     'flake8-blind-except==0.1.1',
-    'flake8-debugger==3.2.1',
+    'flake8-debugger==4.0.0',
 ]
 
 with open('README.rst') as fh:
