@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 14:34+0100\n"
+"PO-Revision-Date: 2020-12-08 20:39-0300\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: forms.py:25
+msgid "OTP token"
+msgstr ""
+
+#: forms.py:28
+msgid "Enter the numeric code displayed on your device after scanning the QR code"
+msgstr "Entre o código numérico exibido no seu dispositivo após scanear o código QR"
+
+#: forms.py:33 templates/wagtail_2fa/device_list.html:14
+msgid "Name"
+msgstr "Nome"
+
+#: forms.py:35
+msgid "The human-readable name of this device."
+msgstr "O nome legível por humanos deste dispositivo."
+
+#: forms.py:39
+msgid "Current password"
+msgstr "Senha atual"
+
+#: forms.py:40
+msgid "As an extra security measurement we need your current password"
+msgstr "Como uma medida de segurança extra nós precisamos da sua senha atual"
+
+#: forms.py:66
+msgid "Invalid token. Please make sure you have entered it correctly."
+msgstr "Token não válido. Por favor tenha certeza que o inseriu corretamente."
+
+#: forms.py:73
+msgid "Invalid password"
+msgstr "Senha inválida"
+
+#: templates/wagtail_2fa/device_confirm_delete.html:4
+msgid "Delete 2FA device"
+msgstr "Apagar dispositivo 2FA"
+
+#: templates/wagtail_2fa/device_confirm_delete.html:6
+#: templates/wagtail_2fa/device_form.html:7 templates/wagtail_2fa/device_list.html:6
+msgid "Two Factor Settings"
+msgstr "Configurações de dois fatores"
+
+#: templates/wagtail_2fa/device_confirm_delete.html:10
+msgid "Do you want to delete the device?"
+msgstr "Você deseja remover o dispositivo?"
+
+#: templates/wagtail_2fa/device_confirm_delete.html:12
+#: templates/wagtail_2fa/device_form.html:62
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/wagtail_2fa/device_confirm_delete.html:13
+#: templates/wagtail_2fa/device_list.html:27
+msgid "Remove device"
+msgstr "Remover dispositivo"
+
+#: templates/wagtail_2fa/device_form.html:4
+msgid "Add new 2FA device"
+msgstr "Adicionar novo dispositivo 2FA"
+
+#: templates/wagtail_2fa/device_form.html:13
+msgid ""
+"\n"
+"            <p>\n"
+"                Two-Factor authentication is a method for making your account\n"
+"                more secure, by requiring you to provide an additional piece\n"
+"                of evidence (a factor) next to your password.\n"
+"            </p>\n"
+"            <p>\n"
+"                The most common way of providing this secondary factor, is by\n"
+"                having one of your devices generate a random code that\n"
+"                changes every minute. This is called a One Time Password.\n"
+"            </p>\n"
+"            <p>\n"
+"                For generating codes, you can use one of the following apps.\n"
+"                You might even have them installed already.\n"
+"                <ul>\n"
+"                    <li>Google Authenticator for iOS or Android</li>\n"
+"                    <li>Microsoft Authenticator</li>\n"
+"                    <li>Authy for iOS or Android</li>\n"
+"                    <li>\n"
+"                        A password manager like 1Password, that also supports\n"
+"                        generating One-Time-Passwords\n"
+"                    </li>\n"
+"                </ul>\n"
+"            </p>\n"
+"            <p>\n"
+"                To configure two-factor authentication for your Wagtail CMS\n"
+"                account, install one of those apps and scan the below QR\n"
+"                code. Note that if you lose or reset your phone, you\n"
+"                will no longer be able to log in.\n"
+"            </p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>\n"
+"                A autenticação de dois fatores é um método para tornar sua conta\n"
+"                mais seguro, exigindo que você forneça uma peça adicional\n"
+"                de evidência (um fator) ao lado de sua senha.\n"
+"            </p>\n"
+"            <p>\n"
+"                A forma mais comum de fornecer este fator secundário é por\n"
+"                ter um de seus dispositivos gerando um código aleatório que\n"
+"                muda a cada minuto. Isso é chamado de senha de uso único.\n"
+"            </p>\n"
+"            <p>\n"
+"                Para gerar códigos, você pode usar um dos seguintes aplicativos.\n"
+"                Você pode até mesmo já tê-los instalados.\n"
+"                <ul>\n"
+"                    <li>Google Authenticator para iOS ou Android</li>\n"
+"                    <li>Microsoft Authenticator</li>\n"
+"                    <li>Authy para iOS ou Android</li>\n"
+"                    <li>\n"
+"                        Um gerenciador de senhas como 1Password, que também "
+"suporta\n"
+"                        geração de senhas de uso único\n"
+"                    </li>\n"
+"                </ul>\n"
+"            </p>\n"
+"            <p>\n"
+"                Para configurar a autenticação de dois fatores para sua conta "
+"Wagtail\n"
+"                CMS, instale um desses aplicativos e digitalize o código QR "
+"abaixo.\n"
+"                Observe que se você perder ou redefinir seu telefone, não será "
+"mais\n"
+"                possível fazer login.\n"
+"            </p>\n"
+"            "
+
+#: templates/wagtail_2fa/device_form.html:51
+msgid "QR Code"
+msgstr "Código QR"
+
+#: templates/wagtail_2fa/device_form.html:63
+msgid "Update"
+msgstr "Atualizar"
+
+#: templates/wagtail_2fa/device_form.html:63
+msgid "Create"
+msgstr "Criar"
+
+#: templates/wagtail_2fa/device_list.html:4
+msgid "Registered 2FA devices"
+msgstr "Dispositivos 2FA registrados"
+
+#: templates/wagtail_2fa/device_list.html:28
+msgid "Update device"
+msgstr "Atualizar dispositivo"
+
+#: templates/wagtail_2fa/device_list.html:35
+msgid "New device"
+msgstr "Novo dispositivo"
+
+#: templates/wagtail_2fa/otp_form.html:3 templates/wagtail_2fa/otp_form.html:63
+msgid "Sign in"
+msgstr "Acessar"
+
+#: templates/wagtail_2fa/otp_form.html:18
+msgid "Invalid code"
+msgstr "Código inválido"
+
+#: templates/wagtail_2fa/otp_form.html:36
+msgid "Enter your two-factor authentication code"
+msgstr "Insira seu código de autenticação em dois fatores"
+
+#: templates/wagtail_2fa/otp_form.html:63
+msgid "Signing in…"
+msgstr "Acessando…"
+
+#: utils.py:13
+#, python-format
+msgid "Device #%s"
+msgstr "Dispositivo #%s"
+
+#: wagtail_hooks.py:55
+msgid "Manage your 2FA devices"
+msgstr "Gerenciar seus dispositivos 2FA"
+
+#: wagtail_hooks.py:56
+msgid "Add or remove devices for 2 factor authentication."
+msgstr "Adicionar ou remover dispositivos para autenticação em 2 fatores."
