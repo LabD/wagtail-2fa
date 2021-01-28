@@ -82,6 +82,7 @@ class DeviceListView(OtpRequiredMixin, ListView):
         Users are always allowed to list their own 2FA devices.
         If they have the ``change_user`` permission, they are allowed
         to list other users' 2FA devices.
+
         """
         if (int(self.kwargs["user_id"]) == request.user.pk or
                 request.user.has_perm("user.change_user")):

@@ -14,7 +14,6 @@ def pytest_configure():
             'django.contrib.messages.middleware.MessageMiddleware',
             'django.middleware.clickjacking.XFrameOptionsMiddleware',
             'wagtail_2fa.middleware.VerifyUserMiddleware',
-            'wagtail.core.middleware.SiteMiddleware',
         ],
         STATIC_URL='/static/',
         INSTALLED_APPS=[

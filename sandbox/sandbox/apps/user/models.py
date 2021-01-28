@@ -1,10 +1,9 @@
 from django.contrib.auth.models import (
     AbstractBaseUser, PermissionsMixin, UserManager)
 from django.core.mail import send_mail
-from django.db import connections, models
-from django.dispatch import receiver
+from django.db import models
 from django.utils import timezone
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class User(AbstractBaseUser, PermissionsMixin):
