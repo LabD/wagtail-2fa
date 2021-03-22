@@ -22,7 +22,7 @@ tests_require = [
     'pytest-django==3.10.0',
 
     # Linting
-    'isort==5.5.3',
+    'isort==5.8.0',
     'flake8==3.8.3', # 3.7.9
     'flake8-blind-except==0.1.1',
     'flake8-debugger==3.2.1',
